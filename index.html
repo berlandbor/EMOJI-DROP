@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emoji Drop</title>
+  <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" id="div">
+
+    <header class="header">
+      <h1 class="tetris">EMOJI DROP</h1>
+      <p class="by">by berlandbor</p>
+      <button id="update" onclick="обновитьСтраницу()">🔃</button>
+    </header>
+
+    <main class="game-area">
+      <canvas id="maincanvas" width="240" height="400"></canvas>
+
+      <div class="side-panel">
+        <label>Счёт:</label>
+        <div id="score" class="score">0</div>
+        <label>Уровень:</label>
+        <div id="level" class="level">1</div>
+      </div>
+    </main>
+
+    <div class="controls">
+      <button id="left">⬅️</button>
+      <button id="right">➡️</button>
+      <button id="down">⬇️</button>
+    </div>
+
+    <div class="game-controls">
+      <button id="playBtn">▶️ Играть</button>
+      <button id="pauseBtn">⏸️ Пауза</button>
+      <button id="resetBtn">🔄 Новая игра</button>
+    </div>
+
+  </div>
+
+  <script src="Tetris.js"></script>
+</body>
+</html>
